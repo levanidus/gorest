@@ -19,4 +19,13 @@ Content-Type: application/json
 ###
 
 POST http://localhost:8000/api/lists HTTP/1.1
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE3MTc5OTcsImlhdCI6MTY1MTY3NDc5NywidXNlcl9pZCI6MX0.I6cW4TZoEnTKm_5jPImV4J6rQ1ex2z7mM3CDwMaFDKw
+
+{
+    "title" : "Список продуктов",
+}
+
+###
+
+
+
