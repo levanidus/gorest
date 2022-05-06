@@ -2,8 +2,8 @@ POST http://localhost:8000/auth/sign-up HTTP/1.1
 Content-Type: application/json
 
 {
-    "name" : "Levanid",
-    "username" : "levanidus",
+    "name" : "Vasya",
+    "username" : "vasyatko",
     "password": "qwerty"
 }
 
@@ -12,20 +12,27 @@ POST http://localhost:8000/auth/sign-in HTTP/1.1
 Content-Type: application/json
 
 {
-    "username" : "levanidus",
+    "username" : "vasyatko",
     "password": "qwerty"
 }
 
 ###
 
 POST http://localhost:8000/api/lists HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE3MTc5OTcsImlhdCI6MTY1MTY3NDc5NywidXNlcl9pZCI6MX0.I6cW4TZoEnTKm_5jPImV4J6rQ1ex2z7mM3CDwMaFDKw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE4OTcyNTYsImlhdCI6MTY1MTg1NDA1NiwidXNlcl9pZCI6Mn0.nq1YcwmYTA_wUokHKKT3Lax4FIGbiCMH6kME8Fngc7w
 
 {
-    "title" : "Список продуктов",
+    "title" : "Список Важных дел",
+    "description" : "Срочно нужно сделать"
 }
 
 ###
 
+GET http://localhost:8000/api/lists HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE4OTcyNTYsImlhdCI6MTY1MTg1NDA1NiwidXNlcl9pZCI6Mn0.nq1YcwmYTA_wUokHKKT3Lax4FIGbiCMH6kME8Fngc7w
 
+###
+
+GET http://localhost:8000/api/lists/4 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE4OTcyNTYsImlhdCI6MTY1MTg1NDA1NiwidXNlcl9pZCI6Mn0.nq1YcwmYTA_wUokHKKT3Lax4FIGbiCMH6kME8Fngc7w
 
