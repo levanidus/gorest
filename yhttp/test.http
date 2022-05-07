@@ -36,3 +36,17 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE4OTcyN
 GET http://localhost:8000/api/lists/4 HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE4OTcyNTYsImlhdCI6MTY1MTg1NDA1NiwidXNlcl9pZCI6Mn0.nq1YcwmYTA_wUokHKKT3Lax4FIGbiCMH6kME8Fngc7w
 
+###
+
+DELETE http://localhost:8000/api/lists/3 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE5NjIzMzgsImlhdCI6MTY1MTkxOTEzOCwidXNlcl9pZCI6Mn0.EojOT9wvAngB01qedHY0V3etAk5IwyuARzawKgcfNXk
+
+###
+
+PUT http://localhost:8000/api/lists/4 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE5NjIzMzgsImlhdCI6MTY1MTkxOTEzOCwidXNlcl9pZCI6Mn0.EojOT9wvAngB01qedHY0V3etAk5IwyuARzawKgcfNXk
+
+{
+    "title" : "Dave Grohl",
+    "description" : "Фу файтерс"
+}
