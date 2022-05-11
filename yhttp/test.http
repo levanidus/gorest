@@ -44,9 +44,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE5NjIzM
 ###
 
 PUT http://localhost:8000/api/lists/4 HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTE5NjIzMzgsImlhdCI6MTY1MTkxOTEzOCwidXNlcl9pZCI6Mn0.EojOT9wvAngB01qedHY0V3etAk5IwyuARzawKgcfNXk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTIwNjc1NjAsImlhdCI6MTY1MjAyNDM2MCwidXNlcl9pZCI6Mn0.ojLUqdpdDa1Ty5DR2bXAueoC6kWZ6X9i5I9MMLGrMyw
 
 {
-    "title" : "Dave Grohl",
-    "description" : "Фу файтерс"
+    "title" : "John Lennon"
 }
