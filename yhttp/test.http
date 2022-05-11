@@ -49,3 +49,17 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTIwNjc1N
 {
     "title" : "John Lennon"
 }
+
+###
+
+POST http://localhost:8000/api/lists/4/items
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTIzMjgxNzEsImlhdCI6MTY1MjI4NDk3MSwidXNlcl9pZCI6Mn0.gYpd-Fn2O1mqjj95zbiROJKYs4PVcwcCO6tJkAJfu4g
+
+{
+    "title" : "Шляпа"
+}
+
+###
+
+GET http://localhost:8000/api/lists/4/items
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTIzMjgxNzEsImlhdCI6MTY1MjI4NDk3MSwidXNlcl9pZCI6Mn0.gYpd-Fn2O1mqjj95zbiROJKYs4PVcwcCO6tJkAJfu4g
