@@ -53,13 +53,23 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTIwNjc1N
 ###
 
 POST http://localhost:8000/api/lists/4/items
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTIzMjgxNzEsImlhdCI6MTY1MjI4NDk3MSwidXNlcl9pZCI6Mn0.gYpd-Fn2O1mqjj95zbiROJKYs4PVcwcCO6tJkAJfu4g
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTIzOTQxNTYsImlhdCI6MTY1MjM1MDk1NiwidXNlcl9pZCI6Mn0.cDiHZgr9wQuhqfpRD-uxTAo1Z1Jg5hyfi-SpTn0OvQQ
 
 {
-    "title" : "Шляпа"
+    "title" : "Де Ниро"
 }
 
 ###
 
 GET http://localhost:8000/api/lists/4/items
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTIzMjgxNzEsImlhdCI6MTY1MjI4NDk3MSwidXNlcl9pZCI6Mn0.gYpd-Fn2O1mqjj95zbiROJKYs4PVcwcCO6tJkAJfu4g
+
+###
+
+GET http://localhost:8000/api/items/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTIzOTQxNTYsImlhdCI6MTY1MjM1MDk1NiwidXNlcl9pZCI6Mn0.cDiHZgr9wQuhqfpRD-uxTAo1Z1Jg5hyfi-SpTn0OvQQ
+
+###
+
+DELETE http://localhost:8000/api/items/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTIzOTQxNTYsImlhdCI6MTY1MjM1MDk1NiwidXNlcl9pZCI6Mn0.cDiHZgr9wQuhqfpRD-uxTAo1Z1Jg5hyfi-SpTn0OvQQ
