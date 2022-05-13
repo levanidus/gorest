@@ -73,3 +73,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTIzOTQxN
 
 DELETE http://localhost:8000/api/items/4
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTIzOTQxNTYsImlhdCI6MTY1MjM1MDk1NiwidXNlcl9pZCI6Mn0.cDiHZgr9wQuhqfpRD-uxTAo1Z1Jg5hyfi-SpTn0OvQQ
+
+###
+
+PUT http://localhost:8000/api/items/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTI0ODQ2MDQsImlhdCI6MTY1MjQ0MTQwNCwidXNlcl9pZCI6Mn0.xt1G52tIzxLdaiO-ft7LrlmgEprn28VB1E3E-CYEKck
+
+{
+    "title": "Хоффманн",
+    "description" : "Дастин",
+    "done" : true
+}
