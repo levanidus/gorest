@@ -18,21 +18,21 @@ func main() {
 
 	logrus.SetFormatter(new(logrus.JSONFormatter))
 
-	if err := initConfig(); err != nil {
+	/*if err := initConfig(); err != nil {
 		logrus.Fatalf("config init error: %s", err.Error())
-	}
+	}*/
 
 	if err := godotenv.Load(); err != nil {
 		logrus.Fatalf("load env variables error: %s", err.Error())
 	}
 
 	db, err := repository.NewPostgresDB(repository.Config{
-		Host:     viper.GetString("db.host"),
-		Port:     viper.GetString("db.port"),
-		Username: viper.GetString("db.username"),
+		Host:     os.Getenv("DB_HOST"),
+		Port:     os.Getenv("DB_PASSWORD"),
+		Username: os.Getenv("DB_USER"),
 		Password: os.Getenv("DB_PASSWORD"),
-		DBName:   viper.GetString("db.dbname"),
-		SSLMode:  viper.GetString("db.sslmode"),
+		DBName:   os.Getenv("DB_NAME"),
+		SSLMode:  "disable",
 	})
 
 	if err != nil {
