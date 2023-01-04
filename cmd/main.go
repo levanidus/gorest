@@ -28,7 +28,7 @@ func main() {
 
 	db, err := repository.NewPostgresDB(repository.Config{
 		Host:     os.Getenv("DB_HOST"),
-		Port:     os.Getenv("DB_PASSWORD"),
+		Port:     os.Getenv("DB_PORT"),
 		Username: os.Getenv("DB_USER"),
 		Password: os.Getenv("DB_PASSWORD"),
 		DBName:   os.Getenv("DB_NAME"),
@@ -45,7 +45,7 @@ func main() {
 
 	srv := new(todo.Server)
 
-	if err := srv.Run(viper.GetString("port"), handlers.InitRoutes()); err != nil {
+	if err := srv.Run(os.Getenv("APP_PORT"), handlers.InitRoutes()); err != nil {
 		logrus.Fatalf("error occured while running http server: %s", err.Error())
 	}
 }
